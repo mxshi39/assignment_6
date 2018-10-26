@@ -1,3 +1,15 @@
+//change img function//
+$(document).on("click","#glaz-drop",function() {
+	var flavor = $("#glaz-drop :selected").text();
+	if (flavor != "Glazing") {
+		console.log(flavor);
+		$("#flavor-update").text(flavor);
+		$("#flavor-update").css("background-color", "rgba(255,255,255,0.7)");
+	}	
+});
+
+
+// local storage function//
 var addedItem = []; //for temporarily store item if local storage is null//
 
 // generate ramdom number//

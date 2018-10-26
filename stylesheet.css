@@ -233,6 +233,12 @@ td {
   	justify-content: space-between;
 }
 
+/* change cursor to hand when hover over*/
+#glaz-drop, #quant-drop {
+	cursor: pointer;
+	color: #42210B;
+}
+
 select {
   color: #808080;
   font-size: 14pt;
@@ -255,6 +261,17 @@ select {
     height: 75px;
     margin: 10px 0;
 }
+
+/* update image flavor text*/
+#flavor-update {
+	display: inline-block;
+	transform: translate(20px,-320px);
+	padding: 3px 5px;
+	text-decoration-color: #1A1A1A;
+	font-family: AR CENA;
+	font-size: 16pt;
+}
+
 
 /* Service Page */
 /* modify image size*/
