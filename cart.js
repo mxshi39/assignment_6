@@ -1,3 +1,10 @@
+$(document).ready( function() {
+	var productArry = JSON.parse(localStorage.getItem("addedRolls"));
+	var len = productArry.length;
+	$("#number").text(len);
+	console.log(len);
+});
+
 //change img function//
 $(document).on("click","#glaz-drop",function() {
 	var flavor = $("#glaz-drop :selected").text();
@@ -43,6 +50,11 @@ $(document).on("click",".AddToCart", function() {
 		//store everything again//
 		localStorage.setItem("addedRolls",JSON.stringify(savedItem)); 
 	}
+	//update cart count//
+	var productArry = JSON.parse(localStorage.getItem("addedRolls"));
+	var len = productArry.length;
+	$("#number").text(len);
+	console.log(len);
 });
 
 //object Product stores all the info got from page after click on add to cart//

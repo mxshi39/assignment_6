@@ -63,10 +63,6 @@ table {
 
 
 /*Home page carasould styling*/
-.carousel {
-  text-align: center;
-}
-
 .carousel-slide {
 	display:none;
   width:86%;
@@ -81,11 +77,10 @@ table {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: white;
+  padding: 10px;
+  color: #1A1A1A;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 21px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -105,7 +100,7 @@ table {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255,255,255,0.6);
 }
 
 /* The dots/bullets/indicators */
@@ -127,9 +122,9 @@ table {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: .5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: .5s;
 }
 
 @-webkit-keyframes fade {
@@ -178,6 +173,7 @@ td {
   text-align: center;
   font-size: 10pt;
   color: #DBA703;
+  cursor: pointer;
 }
 
 td.quant {
