@@ -3,13 +3,17 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<title> Bun Bun Bake Shop </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="cart.js" type="text/javascript"></script>	
+	<script src="count.js" type="text/javascript"></script>	
 </head>
 
 <body>
 	<header>
 		<div class="logo-shop"> <!-- this is for styling the logo and shopping cart option-->
+			<p id="number">0</p>
+			<img src="./BunBunLogo.png" class="logo"/>
 			<a href="ShoppingCart.html">
-				<img src="./BunBunLogo.png" class="logo"/>
 				<h5><img src="./cart-04.png" class="cart">Cart</h5>
 			</a>
 		</div>
@@ -29,7 +33,7 @@
 			<img src="./WalnutRoll-01.png" alt="Walnut Cinnamon Roll"/>
 		</div>
 		<div class="roll-details">
-			<h1>Walnut Roll</h1>
+			<h1 id="roll-name">Walnut Roll</h1>
 			<h4 class="price">$4.0</h4><h4 class="unit">/roll</h4>
 			<p>Our walnut cinnamon rolls are freshly baked everyday to deliver the best quality of texture and taset.</p>
 			<!--  product details table -->
@@ -71,14 +75,14 @@
 			</table>
 			<!-- dropdown options -->
 			<div class="dropdown">
-				<select>
+				<select id="quant-drop">
 					<option value="0">Quantity</option>
 				    <option value="1">1</option>
 				    <option value="2">3</option>
 				    <option value="3">6</option>
 				    <option value="4">12</option>
 				</select>
-				<select>
+				<select id="glaz-drop">
 					<option value="0">Glazing</option>
 				    <option value="1">None</option>
 				    <option value="2">Sugar-milk</option>

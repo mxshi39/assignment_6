@@ -47,6 +47,21 @@
   margin: 0 7%;
 }
 
+/* Summary table*/
+table, th {
+  font-family: AR CENA;
+  font-size: 18pt;
+  color: #1A1A1A;
+  border-bottom: 1px solid #DBA703;
+}
+
+table {
+  width: 86%;
+  margin: auto;
+}
+
+
+
 /*Home page carasould styling*/
 .carousel {
   text-align: center;
@@ -125,4 +140,52 @@
 @keyframes fade {
   from {opacity: .5} 
   to {opacity: 1}
+}
+
+
+/* style content inside table*/
+img.row-image {
+  width: 100px;
+  padding: 10px 0;
+  margin: 10px 10px 10px 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+td {
+  font-family: AR CENA;
+  font-size: 18pt;
+  color: #1A1A1A;
+  text-align: center;
+}
+
+.name {
+  float: left;
+}
+
+#total {
+  display: block;
+  clear: left;
+/*  float: right;*/
+  margin-left: 86%;
+  font-family: AR CENA;
+  font-size: 18pt;
+}
+
+.delete-item {
+  margin:0;
+  display: inline-block;
+  text-align: center;
+  font-size: 10pt;
+  color: #DBA703;
+}
+
+td.quant {
+  transform: translateY(18px);
+}
+
+/* change button color when hover on place order button*/
+.order:hover {
+  background-color: #42210B;
+  color:#DBA703;
 }

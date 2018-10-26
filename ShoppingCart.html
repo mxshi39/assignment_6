@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<link rel="stylesheet" type="text/css" href="jsstyle.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="main.js" type="text/javascript"></script>	
+		<script src="load.js" type="text/javascript"></script>	
 	</head>
 <body>
 	
@@ -17,6 +17,16 @@
 		<h1 id="title-shop">Order Summary</h1>
 	</header>
 	<!-- Make table for added item info-->
+	<table class="summary-details">
+		<tr id="summary-head">
+			<th>Rolls</th>
+			<th>Glazing</th>
+			<th>Quantity</th>
+			<th>Price</th>
+		</tr>
+	</table>
+	<p id="total">Total:</p>
+	<!-- Buttons-->
 	<div class="shop-page-buttons">
 		<a href="./OurRolls.html"><button class="back-shopping">Continue Shopping</button></a>
 		<button class="order">Place Order!</button>

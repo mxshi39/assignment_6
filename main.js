@@ -1,3 +1,4 @@
+// Home page carousel
 var slideIndex = 1;
 showSlides(slideIndex);
 
